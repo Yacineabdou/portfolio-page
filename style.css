@@ -1,0 +1,584 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* ---header--- */
+header {
+    height: 100vh;
+    padding: 10px 80px;
+    background-color: #1a2440;
+}
+.head_nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+    z-index: 1000;
+    padding: 30px 80px;
+    background-color: #1a2440;
+}
+.logo {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+h1{
+    font-size: 5.6rem;
+    font-weight: 700;
+}
+.head_nav ul {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.head_nav ul a {
+    text-decoration: none;
+    color: #ffffff;
+}
+#home{
+    color: #f5a11b;
+}
+.head_nav ul a:hover {
+    color: #f5a11b;
+}
+/* AJOUTER CES RÈGLES DANS VOTRE CSS GLOBAL */
+
+/* Masquer le checkbox et les icônes sur Desktop */
+#menu-toggle-checkbox,
+.menu-icon-open,
+.menu-icon-close {
+    display: none;
+}
+/* Votre .head_nav ul n'a pas besoin de la transition ici car il est en ligne */
+.block__head_left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 150px;
+    color: #ffffff;
+}
+.tetle span {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.element__para {
+    width: 60%;
+}
+.tetle {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.block__head_left p {
+    margin: 20px 0;
+}
+.icons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.icon_facb, 
+.icon_twit, 
+.icon_inst, 
+.icon_link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #f5a11b;
+    color: #f5a11b;
+}
+.block__left_sect_btn_icons button,
+.main__rigth_pargth button,
+.service_block_1 button, 
+.service_block_2 button, 
+.service_block_3 button,
+.btn_inp button{
+    width: 140px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    background-color: #f5a11b;
+    box-shadow: 0px 0px 10px 0px #f5a11b;
+    cursor: pointer;
+    font-weight: 600;
+}
+.block__head_rigth_img img{
+     width: 350px;
+    height: 350px;
+}
+.block__head_rigth_img{
+    overflow: hidden;
+    border: 20px solid #fff;
+    border-radius: 50%;
+    animation: num 4s ease-in-out infinite alternate;
+}
+@keyframes num {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-40px);
+    }
+}
+.main__left_img img {
+    width: 350px;
+    height: 350px;
+    border-radius: 20px 50% 5px 5px;
+}
+/* ---MAIN--- */
+.sect__1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    color: #ffffff;
+    padding: 90px 80px;
+    background-color: #2c324a;
+    height: 100vh;
+}
+.main__rigth_pargth p {
+    margin: 20px 0;
+    width: 30vw;
+}
+.tetle .me, 
+.sect__3 h3 span,
+.sect__4 h3 span {
+    color: #f5a11b;
+}
+.sect__2 h3, 
+.sect__4 h3 {
+    margin-bottom: 50px;
+}
+.sect__2 h3 span, 
+.sect__4 {
+    color: #f5a11b;
+}
+.sect__2 {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    color: #ffffff;
+    padding: 90px 80px;
+    background-color: #1a2440;
+    height: 100vh;
+}
+.sect__services {
+    display: flex;
+    gap: 20px;
+}
+.service_block_1, 
+.service_block_2, 
+.service_block_3 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 30vw;
+    height: 30vh;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #2c324a;
+    transition: 0.3s ease 0s;
+}
+.service_block_1:hover, 
+.service_block_2:hover, 
+.service_block_3:hover {
+    border: 1px solid #f5a11b;
+    transform: scale(1.02);
+}
+.icon_web_dev, 
+.icon_design, 
+.icon_app_dev {
+    display: flex;
+    flex-direction: column;
+}
+.icon_web_dev span:nth-child(1), 
+.icon_design span:nth-child(1), 
+.icon_app_dev span:nth-child(1) {
+    font-size: 7rem;
+    color: #f5a11b;
+}
+.icon_web_dev span:nth-child(2), 
+.icon_design span:nth-child(2), 
+.icon_app_dev span:nth-child(2) {
+    font-size: 1.6rem;
+}
+.service_block_1 p, 
+.service_block_2 p, 
+.service_block_3 p {
+    font-size: 16px;
+    margin: 20px 0;
+}
+.sect__3 {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    color: #ffffff;
+    padding: 90px 80px;
+    background-color: #2c324a;
+    height: 100vh;
+}
+.hov {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.texte {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: -100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(180deg,rgba(255, 255, 255, 0) 21%, rgba(245, 161, 27, 0.8) 100%);
+    transition: 0.3s;
+}
+.hov .icon {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2c324a;
+}
+.hov:hover  .texte{
+    bottom: 0;
+
+}
+
+.block__img {
+    display: grid;
+    /* 3 colonnes sur desktop */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px;
+    margin-top: 50px;
+}
+.block__img img {
+    width: 100%;
+    height: 30vh;
+   
+}
+.sect__4 {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    color: #ffffff;
+    padding: 90px 80px;
+    background-color: #1a2440;
+    height: 100vh;
+}
+.loc__and_inp {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+}
+.block__inp {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.ligne__inp-1,
+.ligne__inp-2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.block__inp input{
+    width: 100%;
+    padding: 20px 10px;
+    border-radius: 10px;
+    background-color: #2c324a;
+    color: #ffffff;
+    border: none;
+}
+:focus::-webkit-input-placeholder{
+    opacity: 0;
+    -webkit-transition: opacity .5s ease-in-out;
+    transition: opacity .5s ease-in-out;
+}
+.btn_inp input {
+    padding-bottom: 250px;
+    margin-bottom: 30px;
+}
+.block__loc iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+/* ---FOOTER---  */
+.element__footer {
+    /* position: fixed;
+    bottom: 0;
+    left: 0; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+    z-index: 1000;
+    padding: 20px 90px; 
+    background-color: #2c324a;
+}
+.footer_icon {
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5a11b;
+    font-size: 2.4rem;
+}
+h3 {
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+
+@media (max-width: 1024px) {
+    .sect__3 {
+        height: auto;
+        padding: 50px 20px;
+    }
+
+    .block__img {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        width: 100%;
+        max-width: 600px;
+        margin: 50px auto 0 auto;
+    }
+    .block__img img {
+        height: auto;
+    }
+}
+@media (max-width: 768px) {
+    
+    header {
+        height: auto; 
+        padding: 50px 20px;
+    }
+    
+    .head_nav ul {
+        gap: 20px;
+        /* flex-wrap: wrap; */
+        /* justify-content: center; */
+    }
+    .head_nav {
+        flex-direction: row; 
+        padding: 20px;
+        align-items: center;
+        justify-content: space-between; 
+    }
+
+    /* 1. Afficher les icônes (label) et masquer le nav initialement */
+    .menu-icon-open,
+    .menu-icon-close {
+        display: block; 
+        font-size: 24px;
+        cursor: pointer;
+        z-index: 1001; 
+        padding: 5px;
+    }
+    
+    /* Le menu de fermeture est masqué par défaut */
+    .menu-icon-close {
+        display: none;
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        z-index: 1002;
+    }
+
+    /* Masquer le checkbox (il est contrôlé par les labels) */
+    #menu-toggle-checkbox {
+        display: none;
+    }
+
+    /* 2. Positionnement initial du Menu (masqué hors écran) */
+    .head_nav .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%; 
+        max-width: 150px;
+        height: 350px;
+        background-color: #2c324a;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 80px 30px 0;
+        z-index: 999;
+        transition: right 0.3s ease-in-out;
+    
+        /* Assurer que le menu n'est pas affiché en flex sans 'checked' */
+        display: flex;
+    }
+    
+    #menu-toggle-checkbox:checked ~ .nav-menu {
+        right: 0; 
+    }
+    
+    #menu-toggle-checkbox:checked ~ .menu-icon-open {
+        display: none;
+    }
+    
+    #menu-toggle-checkbox:checked ~ .nav-menu .menu-icon-close {
+        display: block; /* Affiche l'icône de fermeture */
+    }
+    .block__head_left {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+        margin-top: 100px;
+    }
+    .tetle span {
+        font-size: 16px;
+    }
+    
+    .element__para {
+        order: 2; /* Place le texte en dessous de l'image */
+    }
+    .block__head_rigth_img {
+        order: 1; /* Place l'image en haut */
+    }
+
+    .tetle {
+        align-items: center;
+    }
+    .block__left_sect_btn_icons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .block__head_rigth_img img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .sect__1 {
+        flex-direction: column;
+        height: auto;
+        padding: 50px 20px;
+        gap: 40px;
+        text-align: center;
+    }
+    .main__rigth_pargth p {
+        width: auto;
+        margin: 20px auto;
+        max-width: 600px;
+    }
+    .main__left_img img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .sect__2 {
+        height: auto;
+        padding: 50px 20px;
+    }
+    .sect__services {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .service_block_1, 
+    .service_block_2, 
+    .service_block_3 {
+        width: 100%; 
+        height: auto;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    .service_block_1:hover, 
+    .service_block_2:hover, 
+    .service_block_3:hover {
+        width: 100%;
+        transition: none;
+    }
+
+    .sect__3 {
+        height: auto;
+        padding: 50px 20px;
+    }
+
+    .block__img {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        width: 100%;
+        max-width: 600px;
+        margin: 50px auto 0 auto;
+    }
+    .block__img img {
+        height: auto;
+    }
+
+    .sect__4 {
+        height: auto;
+        padding: 50px 20px;
+    }
+    .loc__and_inp {
+        grid-template-columns: 1fr; 
+        gap: 40px;
+    }
+    .block__loc iframe {
+        height: 300px;
+    }
+    .ligne__inp-1,
+    .ligne__inp-2 {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .btn_inp input.inp {
+        padding-bottom: 100px;
+    }
+    /* .btn_inp button {
+        width: 100%;
+    } */
+
+
+    footer {
+        height: auto;
+    }
+    .element__footer {
+        position: relative;
+        padding: 20px;
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    .copy_rigth {
+        font-size: 16px;
+        order: 2;
+    }
+    .footer_icon {
+        order: 1;
+    }
+}
+@media (max-width: 425px) {
+    .block__img {
+        grid-template-columns: 1fr;
+    }
+}
